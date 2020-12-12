@@ -1,5 +1,10 @@
-# OS generated files #
-######################
+# Jekyll files & caches #
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# macOS generated files #
 .DS_Store
 .DS_Store?
 ._*
