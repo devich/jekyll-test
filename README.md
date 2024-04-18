@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Ibit iuvenis
 
 ## In me erat
