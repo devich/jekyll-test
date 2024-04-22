@@ -1,0 +1,24 @@
+<!-- Header section -->
+    <header>
+      <nav>
+  <ul>
+    <li><strong>Acme Corp</strong></li>
+  </ul>
+  <ul>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Products</a></li>
+  </ul>
+</nav>
+    </header>
+    {% assign sorted_pages = site.pages | sort: "order", "last" %}
+    {% for site_page in sorted_pages %}
+      {% if site_page.title %}
+        {{ site_page.title }}
+      {% else %}
+        {% if site_page.path != "index.md" %}
+          {{ site_page.path | remove: ".md" }}
+        {% endif %}
+      {% endif %}
+      {{ site_page.order }}
+    {% endfor %}
