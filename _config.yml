@@ -1,3 +1,4 @@
 bg_color: dark
 theme_color: pumpkin
 remote_theme: devich/quick@0.0.1
+gtag: ${{ vars.ENV_CONTEXT_VAR }}
