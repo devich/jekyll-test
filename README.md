@@ -2,7 +2,7 @@
 
 ## Site.url: {{ site.url }}
 
-## Site.url (absolute_url filter): {{ site.url | absolute_url }}
+## Site.url (absolute_url filter): {{ "/" | absolute_url }}
 
 ## Site.baseurl: {{ site.baseurl }}
 
